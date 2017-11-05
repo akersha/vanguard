@@ -1,0 +1,77 @@
+/* ==========================================================================
+   contact page styles
+   ========================================================================== */
+.contact-leadspace-head {
+	background:url(../images/contact-bg.png) no-repeat fixed; 
+	background-position: 50% 15%; 
+	border-bottom:1px solid #BABABA;
+}
+.contact-leadspace-head h1 {
+	color:#000;
+	text-align:center;
+}
+.contact-leadspace-head h2 {
+	color:#000;
+	text-align:center;
+}
+
+.contact-content-1 {
+	border-bottom:1px solid #BABABA; 
+	width:100%; 
+	/*background-color:#264A60;*/
+	background-color:rgba(38,74,96,0.8);
+	padding:25px 0 25px 0;
+}
+.contact-content-1 h2 {
+	padding-top:25px;
+	text-align:justify;
+	color:#fff;
+}
+.contact-content-2 {
+	border-bottom:1px solid #BABABA; 
+	width:100%; 
+	background-color:#FCFAF5;
+}
+.contact-content-2 h2 {
+	padding-top:25px;
+}
+.contact-wrapper-1 {
+	width:100%; 
+	margin:0; 
+	padding-top:40px; 
+	padding-bottom:20px; 
+	border-top:1px solid #BABABA; 
+	border-bottom:1px solid #ccc; 
+	background:#F2F2F2 /* url(../images/bg-01-trans.png) no-repeat bottom fixed; */
+}
+.contact-row-wrapper-1 {
+	 width:90%; 
+	 margin:0 auto; 
+	 margin-bottom:40px; 
+	 padding-bottom:0px; 
+	 padding-top:0px;
+}
+.contact-col-ad {
+	padding-top:50px;
+	padding-left:40px;
+}
+.contact-col-ad-l {
+	background-color:#1D3649;
+}
+.contact-col-ad-r {
+	background-color:#264A60;
+}
+.col-text-bio {
+	font-size:18px; 
+	font-weight:200
+}	
+p.intro {
+	line-height:1.2em;	
+}
+
+.contact-content-2 .leader-bio {
+	font-size:2.0rem; background-color:#e5e5e5; color:#333; font-weight:200; border:2px solid #ffffff; padding:20px;
+}
+.contact-content-2 .leader-bio p {
+	line-height:1.4em;
+}

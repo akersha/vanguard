@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Home page styles
+   ========================================================================== */
+.home-leadspace-head {
+	background:url(../images/fingerprint-bg-1.png) no-repeat fixed; 
+	background-position: 70% 15%; 
+	border-bottom:1px solid #BABABA;
+}
+
+.home-leadspace-head .page-intro h1{
+	text-align:center;
+	/*background:url(../images/vis_logo.png) no-repeat fixed; 
+	background-position: 50px 70px;
+	background-size: 60%;*/
+}
+
+@media (min-width: 400px){
+	#logo{
+		text-align: center;
+		v-align:center;
+	}
+}
+
+@media (min-width: 800px){
+	#logo{
+		float:left;
+		v-align:center;
+	}
+}
+
+.home-leadspace-head .page-intro h2 {
+	text-align:center; padding-top:50px;
+}
+.home-wrapper-1 {
+	width:100%; 
+	margin:0; 
+	margin-top:50px;
+	padding-top:20px;
+	padding-bottom:20px; 
+	background-color:rgba(0,0,0,0.2);
+	background-color:#F9F9F9;
+	background-color:rgba(249,249,249,0.8);
+}
+.home-row-wrapper-1 {
+	 width:90%; 
+	 margin:0 auto; 
+	 /*margin-bottom:40px; */
+	 padding-bottom:0px; 
+	 padding-top:0px;
+}
+.home-row-wrapper-1 h2 {
+	font-size:2.0em;
+	line-height:1.2;
+	font-weight:300;
+	letter-spacing:-0.008em
+}
+.home-content-1 {
+	border-bottom:1px solid #BABABA; 
+	width:100%; 
+	background-color:rgba(38,74,96,0.8);
+	padding:25px 0 25px 0;
+	margin-top:100px;
+}
+.home-content-1 h2 {
+	padding-top:25px;
+	text-align:justify;
+	color:#fff;
+}
+
+.home-col-ad {
+	padding-top:50px;
+	padding-left:40px;
+}
+
+
+.home-col-ad h2, .home-col-ad p, .home-col-ad a, .home-col-ad li {
+	color:#fff !important;
+}
+.home-col-ad p {
+	font-size:22px; 
+	font-weight:200; 
+	line-height:1.4em;	
+}
+
+.home-col-ad ul li {
+	font-size:22px; 
+	font-weight:200;
+	line-height:1.4em;
+	list-style-type:none;
+	padding-left: 1.3em ;
+}
+
+.home-col-ad ul li:before {
+  font-family: 'FontAwesome';
+  content: '\f0da';
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.3em;
+}
+
+.home-col-ad ul li:first-child { margin-top: -30px !important;}
+
+
+.home-col-ad-l {
+}
+
+.home-col-ad-r {
+}
+.col-text-bio, .col-text-bio p {
+	font-size:18px; 
+	font-weight:200;
+	line-height:1.0em;
+}	
+p.intro {
+	line-height:1.2em;	
+	font-size:22px; 
+	font-weight:200; 
+}
+
+.box-shadow {
+	background-color:transparent; 
+}
+.copy-wrapper { background:transparent; padding:10px; padding-bottom:2px;  padding-bottom: 20px;
+}
+.copy-wrapper p{color:#333; line-height:1.3em !important; font-weight:300; padding-left:10px; text-align:center}
+.copy-wrapper h2{
+	font-size:1.6em;
+	font-weight:400;
+	color:#333;
+	line-height:1.2em;
+	word-wrap:break-word; 
+	padding-top:5px; 
+	margin-bottom:0; 
+	padding-bottom:0px; 
+	text-align:center;
+}
+

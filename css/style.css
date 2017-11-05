@@ -1,0 +1,536 @@
+/* =======================================================
+*
+* 	Custom Template Style
+*	Edit this section
+*
+* ======================================================= */
+@font-face {
+ font-family: 'icomoon';
+ src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+ src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+/* ==========================================================================
+   Base custom styles
+   ========================================================================== */
+a {
+    color: #30aabc;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+a:hover, a:active, a:focus {
+	color: #30aabc;
+	outline: none;
+	text-decoration: underline;
+}
+
+::-webkit-selection {
+ color: #818892;
+ background: #f9f6f0;
+}
+
+::-moz-selection {
+ color: #818892;
+ background: #f9f6f0;
+}
+
+::selection {
+ color: #818892;
+ background: #f9f6f0;
+}
+
+#home {
+	min-height: calc(80vh - 70px);
+}
+/* ==========================================================================
+   Header area custom styles
+   ========================================================================== */
+
+.navbar-brand {
+	padding: 10px 15px;
+	display:inline-block;
+}
+.navbar-brand > img {
+	display:inline-block;
+	margin-right:15px;
+}
+/*specific for header Brand/Title text*/
+.navbar-brand>span {
+}
+.navbar-brand img {
+	 margin-top: -10px;
+}
+{
+ font-family: 'Monoton', cursive;
+ font-size:36px;
+} {
+ font-family: 'Kranky', cursive;
+ font-size:36px;
+}
+
+#page-title .breadcrumb {
+	position: relative !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	margin: 0px 0 0 !important;
+	margin-top:-20px !important;
+	padding-top:0px;
+	padding-bottom:0px;
+	background:none;
+}
+/* ==========================================================================
+   Breadcrumb custom styles
+   ========================================================================== */
+
+.breadcrumb li {
+	color: #30aabc;
+	display: inline;
+	max-width: 450px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.breadcrumb li + li:before {
+	content: ">";
+	margin: 0 4px;
+}
+.breadcrumb li a:visited {
+	color: #30aabc;
+}
+
+/* ==========================================================================
+   Nav-tabs custom styles
+   ========================================================================== */
+
+.nav-tabs>li>a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	border: none;
+	border-bottom: 3px solid;
+	border-bottom-color: #CF2A2A;
+}
+.nav-tabs>li {
+	padding-right: 1%;
+	font-size: 20px;
+	float: right;
+}
+ 
+/*responsive specifics*/
+@media (max-width: 479px) {
+ .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+ border: none;
+ border-bottom: 3px solid;
+ border-bottom-color: #CF2A2A;
+}
+ .nav-tabs>li {
+ font-size: 12px;
+}
+}
+
+/* ==========================================================================
+   Section custom styles
+   ========================================================================== */
+
+.section-heading {
+	float: left;
+	width: 100%;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	clear: both;
+}
+.section-heading h2 {
+	font-size: 50px;
+	font-weight: 300;
+	color: #444;
+	text-transform: uppercase;
+	position: relative;
+	display: block;
+	padding-bottom: 20px;
+	line-height: 1.5;
+}
+.section-heading h2:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 80px;
+	height: 2px;
+	background: #6173f4;
+	left: 50%;
+	margin-left: -40px;
+	bottom: 0;
+}
+@media screen and (max-width: 768px) {
+ .section-heading h2 {
+ font-size: 30px;
+}
+}
+.section-heading h3 {
+	font-weight: 300;
+	line-height: 1.5;
+	color: #929292;
+}
+@media screen and (max-width: 768px) {
+ .section-heading h3 {
+ font-size: 24px !important;
+ line-height: 34px;
+}
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.navbar-collapse {
+	min-height: 45px;
+}
+
+.person {
+	text-align: center;
+	margin-bottom: 40px;
+	float: left;
+	width: 100%;
+}
+.person img {
+	display: block;
+	margin: 0 auto;
+	height: 150px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+.person .name {
+	font-size: 24px;
+}
+.person .position {
+	text-transform: uppercase;
+	color: #c3c3c3;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+}
+.alert-success {
+	position:relative;
+	left:0px;
+	bottom:0px;
+	background-color: #f2f2f2;
+	border-left: 4px solid #c4d82d;
+	line-height: 1.4;
+	padding: 8px 0px;
+	margin-bottom: 0px;
+	width: auto;
+	word-wrap: break-word;
+}
+.alert-error {
+	position:relative;
+	left:0px;
+	bottom:0px;
+	background-color: #f2f2f2;
+	border-left: 4px solid #b30a3c;
+	line-height: 1.4;
+	padding: 8px 0px;
+	margin-bottom: 0px;
+	width: auto;
+	word-wrap: break-word;
+}
+
+/* ==========================================================================
+   footer custom styles
+   ========================================================================== */
+
+#footer {
+	position:relative;
+	left:0px;
+	bottom:0px;
+	background-color: #f2f2f2;
+	border-left: 4px solid #44c8f5;
+	line-height: 1.4;
+	padding: 8px 0px;
+	margin-bottom: 0px;
+	width: auto;
+	word-wrap: break-word;
+}
+
+/* ==========================================================================
+   Button custom styles
+   ========================================================================== */
+.btn {
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.btn {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.btn.btn-primary {
+	background: #6173f4;
+	color: #fff;
+	border: none !important;
+	border: 2px solid transparent !important;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+	box-shadow: none;
+	background: #6173f4;
+}
+.btn:hover, .btn:active, .btn:focus {
+	background: #393e46 !important;
+	color: #fff;
+	outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+	border-color: transparent;
+}
+.btn-default:active:hover, .btn-default:active:focus, .btn-default.focus:active, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+	background-color: #d4d4d4;
+	border-color: #8c8c8c;
+	color: #f2f2f2;
+}
+
+
+.js .to-animate, .js .to-animate-2, .js .single-animate {
+	opacity: 0;
+}
+ @media screen and (max-width: 480px) {
+ .col-xxs-12 {
+ float: none;
+ width: 100%;
+}
+}
+.row-bottom-padded-lg {
+	padding-bottom: 7em;
+}
+@media screen and (max-width: 768px) {
+ .row-bottom-padded-lg {
+ padding-bottom: 2em;
+}
+}
+.row-bottom-padded-md {
+	padding-bottom: 4em;
+}
+@media screen and (max-width: 768px) {
+ .row-bottom-padded-md {
+ padding-bottom: 2em;
+}
+}
+.row-bottom-padded-sm {
+	padding-bottom: 2em;
+}
+@media screen and (max-width: 768px) {
+ .row-bottom-padded-sm {
+ padding-bottom: 2em;
+}
+}
+/* ==========================================================================
+   Table custom styles
+   ========================================================================== */
+table th {
+	text-transform:capitalize;
+	font-variant:normal;
+	font-style:normal;
+	text-decoration:none;
+	font-weight:normal;
+	color:#000
+}
+
+.table > tbody > tr.info > td, .table > tbody > tr.info > th, .table > tbody > tr > td.info, .table > tbody > tr > th.info, .table > tfoot > tr.info > td, .table > tfoot > tr.info > th, .table > tfoot > tr > td.info, .table > tfoot > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th, .table > thead > tr > td.info, .table > thead > tr > th.info {
+	background-color: #71c5e8;
+	color: #5a5a5a;
+}
+ .table-striped > tbody > tr:nth-of-type(2n+1) {
+ background-color: #f2f2f2;
+}
+
+
+/* ==========================================================================
+   Form specific custom styles
+   ========================================================================== */
+.dropdown-menu.menu-condensed > li {
+	display:inline;
+	margin:0 2px;
+}
+.dropdown-menu.menu-condensed > li > a {
+	/*clear: both;*/
+  color: #333333;
+	display: inline;
+	font-weight: normal;
+	line-height: 1.1;
+	padding: 3px 20px;
+	white-space: nowrap;
+}
+.dropdown-menu.menu-condensed > li > a:hover {
+	background-color: #71c5e8;
+	color: #f2f2f2;
+}
+.required:before{
+	content: '* ';
+}
+
+
+/* ----------------------------------------------------------------
+	Divider
+-----------------------------------------------------------------*/
+
+
+.divider {
+	position: relative;
+	overflow: hidden;
+	margin: 35px 0;
+	color: #E5E5E5;
+	width: 100%;
+}
+
+.divider.divider-margin { margin: 70px 0; }
+
+.divider:after,
+.divider.divider-center:before,
+.divider.divider-center.divider-short:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 8px;
+	left: 30px;
+	height: 0;
+	border-top: 1px solid #EEE;
+}
+
+.divider.divider-thick:after,
+.divider.divider-center.divider-thick:before,
+.divider.divider-center.divider-short.divider-thick:before { border-top-width: 3px; }
+
+.divider.divider-short:after { width: 30%; }
+
+.divider.divider-vshort:after { width: 12%; }
+
+.divider i {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	line-height: 1;
+	font-size: 18px !important;
+	text-align: center;
+}
+
+.divider a {
+	position: relative;
+	display: inline-block;
+	color: inherit;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.divider a:hover { color: #888; }
+
+
+/* Divider - Icon Align Right
+-----------------------------------------------------------------*/
+
+.divider.divider-right { text-align: right; }
+
+.divider.divider-right:after {
+	left: auto;
+	right: 30px;
+}
+
+
+/* Divider - Icon Align Center
+-----------------------------------------------------------------*/
+
+.divider.divider-center,
+.divider.divider-center.divider-short { text-align: center; }
+
+.divider.divider-center:before {
+	left: -50% !important;
+	right: 0;
+	margin-left: -20px;
+}
+
+.divider.divider-center:after {
+	left: 50% !important;
+	right: 0;
+	margin-left: 20px;
+}
+
+
+/* Short Divider - Icon Align Center
+-----------------------------------------------------------------*/
+
+.divider.divider-center.divider-short:before {
+	left: auto !important;
+	right: 50%;
+	margin-right: 20px;
+	width: 15%;
+}
+
+.divider.divider-center.divider-short:after {
+	left: 50% !important;
+	right: auto !important;
+	margin-left: 20px;
+	width: 15%;
+}
+
+.divider.divider-center.divider-vshort:before,
+.divider.divider-center.divider-vshort:after { width: 6%; }
+
+
+/* Divider - Rounded Icon
+-----------------------------------------------------------------*/
+
+.divider.divider-rounded { color: #BBB; }
+
+.divider.divider-rounded:after,
+.divider.divider-rounded.divider-center:before,
+.divider.divider-rounded.divider-short:before,
+.divider.divider-border:after,
+.divider.divider-border.divider-center:before,
+.divider.divider-border.divider-short:before {
+	top: 19px;
+	left: 40px;
+}
+
+.divider.divider-rounded i,
+.divider.divider-border i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #F5F5F5;
+	border-radius: 50%;
+}
+
+.divider.divider-rounded.divider-right:after,
+.divider.divider-border.divider-right:after {
+	left: auto;
+	right: 40px;
+}
+
+
+/* Divider - Rounded & Border
+-----------------------------------------------------------------*/
+
+.divider.divider-border { color: #E5E5E5; }
+
+.divider.divider-border i {
+	line-height: 38px;
+	background-color: transparent;
+	border: 1px solid #EEE;
+}
+
+
+/* Divider - Line Only
+-----------------------------------------------------------------*/
+
+.divider.divider-line:before,
+.divider.divider-line:after {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
